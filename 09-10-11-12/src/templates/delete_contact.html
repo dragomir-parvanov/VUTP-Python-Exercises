@@ -1,0 +1,12 @@
+<doctype html>
+  <title>Delete Contact - Flask Contacts Database</title>
+  <h2>Delete Contacts</h2>
+
+  {% from "_formhelpers.html" import render_field %}
+  <form method="post">
+    <dl>
+      {{ render_field(form.name) }} {{ render_field(form.address) }} {{ render_field(form.birthday) }} {{ render_field(form.phone_number) }} {{ render_field(form.email)
+      }} {{ render_field(form.profession) }} {{ render_field(form.interests) }}
+    </dl>
+    <p><input type="submit" value="Delete" /></p></form
+></doctype>

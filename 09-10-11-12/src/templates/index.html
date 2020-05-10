@@ -1,0 +1,30 @@
+<doctype html>
+  <head>
+    <title>Flask Contacts Database</title>
+  </head>
+
+  <h2>Flask Contacts Database</h2>
+
+  <p></p>
+  <p>
+    <a href="{{ url_for('.new_contact') }}"> New Contact </a>
+
+    {% with messages = get_flashed_messages() %} {% if messages %}
+  </p>
+
+  <ul class="flashes">
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %} {% endwith %} {% from "_formhelpers.html" import render_field %}
+  <form method="post">
+    <dl>
+      {{ render_field(form.select) }}
+      <p>
+        {{ render_field(form.search) }}
+      </p>
+    </dl>
+
+    <p><input type="submit" value="Search" /></p></form
+></doctype>
