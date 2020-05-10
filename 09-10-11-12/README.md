@@ -1,4 +1,4 @@
-Combined excercise 09-10-11-12 into one project. If you wish to run this project for the first time, remember to execute "db_creator.py" first.
+Combined excercise 09-10-11-12 into one project. **If you wish to run this project for the first time, remember to execute "db_creator.py" first.**
 
 Exercise 09
 
